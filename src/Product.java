@@ -6,6 +6,8 @@ public abstract class Product {
     private String productDescription;//Full description of the product
     private double productWeight;//The weight of the product
 
+    private int stock;//The units that we have
+
     public String getProductName() {
         return productName;
     }
@@ -39,6 +41,14 @@ public abstract class Product {
 
     public void setProductWeight(double productWeight) {
         this.productWeight = productWeight;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
     //end of getter and setters
