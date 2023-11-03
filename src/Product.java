@@ -1,0 +1,45 @@
+/*
+This abstract class is going to have the basic field that a product should have and methods that it should contain
+ */
+public abstract class Product {
+    private String productName;// resume of the name of the product
+    private String productDescription;//Full description of the product
+    private double productWeight;//The weight of the product
+
+    public String getProductName() {
+        return productName;
+    }
+
+    //Constructor of the abstract class
+    public Product(String productName,String productDescription){
+        this.productName=productName;
+        this.productDescription=productDescription;
+    }
+
+    //end constructor
+
+
+
+    //Getters and setter of the abstract class
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getProductDescription() {
+        return productDescription;
+    }
+
+    public void setProductDescription(String productDescription) {
+        this.productDescription = productDescription;
+    }
+
+    public double getProductWeight() {
+        return productWeight;
+    }
+
+    public void setProductWeight(double productWeight) {
+        this.productWeight = productWeight;
+    }
+
+    //end of getter and setters
+}
