@@ -9,6 +9,7 @@ public class ElectricProduct extends Product{
     //Constructor
     public ElectricProduct(String productName,String productDescription){
         super(productName,productDescription);
+        this.setElectricId();
     }
     //End constructor
 
@@ -43,17 +44,22 @@ public class ElectricProduct extends Product{
     //end methods
 
     //override methods
+
+
     @Override
-    public int hashCode(){
-        int multiplierPerProduct=1;
-        int electricCode=1;
-        electricCode=multiplierPerProduct*electricCode+ Objects.hashCode(getProductName());
-        System.out.println(electricCode-1);
-        electricCode=multiplierPerProduct*electricCode+Objects.hashCode(getProductDescription());
-        if (electricCode<0){
-            return electricCode= electricCode*(-1);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ElectricProduct)) return false;
+        ElectricProduct that = (ElectricProduct) o;
+        return Objects.equals(electricId, that.electricId);
+    }
+
+    @Override
+    public int hashCode() {
+        if(Objects.hash(this.getProductName(),this.getProductDescription())<0){
+            return Objects.hash(this.getProductName(),this.getProductDescription())*-1;
         }
-        return electricCode;
+        return Objects.hash(this.getProductName(),this.getProductDescription());
     }
 
     @Override

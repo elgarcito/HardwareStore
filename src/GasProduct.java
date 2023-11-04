@@ -10,6 +10,7 @@ public class GasProduct extends Product {
     //Constructor
     public GasProduct(String productName,String productDescription){
         super(productName,productDescription);
+        this.setGasId();
     }
 
     //End constructor
@@ -61,5 +62,15 @@ public class GasProduct extends Product {
                 +"\nThe full description is:\n"+this.getProductDescription();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof GasProduct)) return false;
+        GasProduct that = (GasProduct) o;
+        return Objects.equals(gasId, that.gasId);
+    }
+
     //end override methods
+
+
 }

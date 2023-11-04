@@ -23,22 +23,65 @@ public class Main {
     public static void main(String[] args) {
         //Example
         System.out.println("Hello and welcome to hardware store!");
+
+
         GardenProduct antPoison= new GardenProduct("ant poison","Poison for ants BW2021",true);
         System.out.println(antPoison.getProductName()+antPoison.isItsPoison());
-        ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
-        lightBulb.setElectricId();
-        System.out.println(lightBulb.getElectricId());
-        System.out.println(lightBulb.toString());
+        System.out.println();
+        System.out.println();
 
+        System.out.println("ligthBulb");
+        ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
+        System.out.println(lightBulb.getElectricId());
+        System.out.println();
+        System.out.println();
+        System.out.println("ligthBulb2");
+        ElectricProduct lightBulb2=new ElectricProduct("Light bulb","led light bulb");
+        System.out.println(lightBulb2.getElectricId());
+        System.out.println();
+        System.out.println();
+        System.out.println(lightBulb2.equals(lightBulb));
+        System.out.println(lightBulb.equals(lightBulb2));
+
+
+
+        System.out.println();
+        System.out.println("gas burner");
         GasProduct gasBurner=new GasProduct("Gas Burner","Gas kitchen burner");
-        gasBurner.setGasId();
         System.out.println(gasBurner.getGasId());
-        System.out.println(gasBurner.toString());
+
+        System.out.println();
+        System.out.println("gas burner2");
+        GasProduct gasBurner2=new GasProduct("Gas Burner","Gas kitchen burner");
+        System.out.println(gasBurner2.getGasId());
+        System.out.println();
+        System.out.println(gasBurner.equals(gasBurner2));
+        System.out.println(gasBurner2.equals(gasBurner));
+
+
+
+        System.out.println();
+
+
 
         GardenProduct shovel=new GardenProduct("Shovel","Small shovel",false);
-        shovel.setGardenId();
+        System.out.println("shovel");
+        System.out.println();
+        System.out.println(shovel.getGardenId());
+        System.out.println(shovel.hashCode());
         System.out.println(shovel.getGardenId());
         System.out.println(shovel.toString());
+
+
+        GardenProduct bigShovel=new GardenProduct("Shovel","Small shovel",false);
+        System.out.println(bigShovel);
+        System.out.println();
+        System.out.println(bigShovel.getGardenId());
+        bigShovel.setGardenId();
+        System.out.println(bigShovel.hashCode());
+        System.out.println(bigShovel.equals(shovel));
+        System.out.println(shovel.equals(bigShovel));
+
 
     }
 }

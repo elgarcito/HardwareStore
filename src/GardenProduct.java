@@ -8,6 +8,7 @@ public class GardenProduct  extends Product{
     public GardenProduct(String productName, String productDescription,boolean itsPoison){
         super(productName,productDescription);
         this.itsPoison=itsPoison;
+        this.gardenId=setGardenId();
     }
     //End constructor
 
@@ -25,22 +26,15 @@ public class GardenProduct  extends Product{
         return gardenId;
     }
 
-    public void setGardenId() {
-        this.gardenId = "GR"+this.hashCode();
+    public String setGardenId() {
+        int a= this.hashCode();
+        if (this.hashCode()<0){
+            a*=-1;
+        }
+        return this.gardenId = "GR"+a;
     }
 
     //end getter and setter
-
-    //Method override
-    @Override
-    public int hashCode(){
-        int code=2*Objects.hash(getProductName(),getProductDescription());
-        if (code<0){
-            return code=code*-1;
-        }
-        return code;
-    }
-
     @Override
     public String toString(){
         String poison;
@@ -54,6 +48,18 @@ public class GardenProduct  extends Product{
                 +"\nIt is a "+poison+" product";
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof GardenProduct)) return false;
+        GardenProduct that = (GardenProduct) o;
+        return itsPoison == that.itsPoison && Objects.equals(gardenId, that.gardenId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.getProductName(), this.getProductDescription());
+    }
 
     //end override methods
 
