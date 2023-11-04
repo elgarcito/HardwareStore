@@ -52,4 +52,6 @@ public abstract class Product {
     }
 
     //end of getter and setters
+
+
 }

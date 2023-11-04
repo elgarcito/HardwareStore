@@ -25,7 +25,8 @@ public class Main {
         System.out.println("Hello and welcome to hardware store!");
         GardenProduct antPoison= new GardenProduct("ant poison","Poison for ants BW2021",true);
         System.out.println(antPoison.getProductName()+antPoison.isItsPoison());
-
+        ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
+        System.out.println(lightBulb.getVoltageRate());
 
 
 

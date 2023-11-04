@@ -43,4 +43,13 @@ public abstract class RawMaterial {
 
     //end getter and setter
 
+    //Methods
+    /*
+    This method tell us if we need a special license to buy that product using the licence of the product according
+    to the type of product, for example: some kind of poison. This method should be override because the licences
+    rules to be valid shoul follow different rules like AB1254 or 129842ZTE
+     */
+    public abstract boolean checkLicence(boolean needLicense,String licenseId, int licenseNumberLength);
+    //end methods
+
 }

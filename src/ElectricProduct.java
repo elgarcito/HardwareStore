@@ -1,6 +1,6 @@
 public class ElectricProduct extends Product{
-    double voltageRate;//The voltage admitted for the product in V (volts)
-    double power;//The power consumed for the product in kW (kiloWatt)
+    private double voltageRate;//The voltage admitted for the product in V (volts)
+    private double power;//The power consumed for the product in kW (kiloWatt)
 
     //Constructor
     public ElectricProduct(String productName,String productDescription){
