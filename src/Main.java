@@ -26,11 +26,16 @@ public class Main {
         GardenProduct antPoison= new GardenProduct("ant poison","Poison for ants BW2021",true);
         System.out.println(antPoison.getProductName()+antPoison.isItsPoison());
         ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
-        System.out.println(lightBulb.getVoltageRate());
-        System.out.println(lightBulb.getProductName());
+        lightBulb.setElectricId();
+        System.out.println(lightBulb.getElectricId());
 
+        GasProduct gasBurner=new GasProduct("Gas Burner","Gas kitchen burner");
+        gasBurner.setGasId();
+        System.out.println(gasBurner.getGasId());
 
-
+        GardenProduct shovel=new GardenProduct("Shovel","Small shovel",false);
+        shovel.setGardenId();
+        System.out.println(shovel.getGardenId());
 
     }
 }
