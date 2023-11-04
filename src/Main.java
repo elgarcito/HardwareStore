@@ -27,6 +27,8 @@ public class Main {
         System.out.println(antPoison.getProductName()+antPoison.isItsPoison());
         ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
         System.out.println(lightBulb.getVoltageRate());
+        System.out.println(lightBulb.getProductName());
+
 
 
 
