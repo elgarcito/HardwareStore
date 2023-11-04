@@ -55,6 +55,14 @@ public class ElectricProduct extends Product{
         }
         return electricCode;
     }
+
+    @Override
+    public String toString(){
+        return "The resume name of the product is:\n"+this.getProductName()
+                +"\nThe full description is:\n"+this.getProductDescription();
+    }
+
+
     //end override methods
 
 }

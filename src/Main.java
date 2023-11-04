@@ -28,14 +28,17 @@ public class Main {
         ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
         lightBulb.setElectricId();
         System.out.println(lightBulb.getElectricId());
+        System.out.println(lightBulb.toString());
 
         GasProduct gasBurner=new GasProduct("Gas Burner","Gas kitchen burner");
         gasBurner.setGasId();
         System.out.println(gasBurner.getGasId());
+        System.out.println(gasBurner.toString());
 
         GardenProduct shovel=new GardenProduct("Shovel","Small shovel",false);
         shovel.setGardenId();
         System.out.println(shovel.getGardenId());
+        System.out.println(shovel.toString());
 
     }
 }

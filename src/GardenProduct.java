@@ -40,6 +40,21 @@ public class GardenProduct  extends Product{
         }
         return code;
     }
+
+    @Override
+    public String toString(){
+        String poison;
+        if (this.itsPoison){
+            poison="poisonous";
+        }else {
+            poison="non poisonous";}
+
+        return  "The resume name of the product is:\n"+this.getProductName()
+                +"\nThe full description is:\n"+this.getProductDescription()
+                +"\nIt is a "+poison+" product";
+    }
+
+
     //end override methods
 
 }
