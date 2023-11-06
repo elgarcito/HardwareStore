@@ -81,9 +81,8 @@ public class Main {
         System.out.println(bigShovel.hashCode());
         System.out.println(bigShovel.equals(shovel));
         System.out.println(shovel.equals(bigShovel));
-
-        PayingRates rates =new PayingRates();
-        rates.showRates();
+        System.out.println();
+        PayingRates.showRates();
 
     }
 }
