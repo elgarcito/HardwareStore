@@ -29,16 +29,30 @@ public class Main {
         System.out.println(antPoison.getProductName()+antPoison.isItsPoison());
         System.out.println();
         System.out.println();
+        System.out.println();
+        System.out.println();
+        GardenProduct antPoison2= new GardenProduct("ant poison2","Poison for ants BW2021",true);
+        System.out.println(antPoison2.getProductName()+antPoison2.isItsPoison());
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println();
+        System.out.println();
 
         System.out.println("ligthBulb");
         ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
         System.out.println(lightBulb.getElectricId());
         System.out.println();
         System.out.println();
+        System.out.println(ElectricProduct.productCounter);
+        System.out.println();
+        System.out.println();
+        System.out.println(lightBulb.defineCost(1,0.01,0));
         System.out.println("ligthBulb2");
         ElectricProduct lightBulb2=new ElectricProduct("Light bulb","led light bulb");
         System.out.println(lightBulb2.getElectricId());
-        System.out.println();
+        System.out.println(ElectricProduct.productCounter);
         System.out.println();
         System.out.println(lightBulb2.equals(lightBulb));
         System.out.println(lightBulb.equals(lightBulb2));
@@ -82,7 +96,18 @@ public class Main {
         System.out.println(bigShovel.equals(shovel));
         System.out.println(shovel.equals(bigShovel));
         System.out.println();
-        PayingRates.showRates();
+
+
+
+        ElectricProduct lightBulb3=new ElectricProduct("Light bulb3","led light bulb");
+        lightBulb3.setStock(10);
+        lightBulb3.removeStock(5);
+        System.out.println(lightBulb3.getStock());
+        System.out.println(lightBulb3.transactionDate());
+
+
+
+
 
     }
 }

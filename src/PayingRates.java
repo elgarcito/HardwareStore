@@ -3,9 +3,13 @@ public final class PayingRates {
     //Doing private the constructor the final class cant be initialized
     private PayingRates(){}
     //How much you pay per hour to a category of employee
+    public static int productCounter;
+    //initialization method using static block
+
     private static final double SELLER_RATE=10.0;
     private static final double DEPOSIT_RATE=8;
     private static final double OWNER_RATE=15;
+
 
     final static void showRates(){
         String message = "The rates per hour according to speciality are: \n" +

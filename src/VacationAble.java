@@ -7,5 +7,5 @@ working days it will return the amount of days to rest
  */
 
 public interface VacationAble {
-    int setVacation(int workingDays,String speciality);
+    int setVacation(String speciality);
 }

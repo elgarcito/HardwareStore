@@ -4,5 +4,5 @@ The check Availability method let us know in a boolean expression if there is or
 Stock in that product
  */
 public interface Available {
-    boolean checkAvailability(Object productStock);
+    boolean checkAvailability(int stock);
 }

@@ -1,7 +1,8 @@
-public class Employee extends Person{
+public class Employee extends Person implements VacationAble{
     private String personalId;//The personal id of the worker
     private double costPerHour;//The pay per hour of the worker
     private String speciality;//What kind of job the worker does
+
 
     //Constructor
     public Employee(String personName, String personEmail, String phoneNumber,String speciality) {
@@ -37,4 +38,20 @@ public class Employee extends Person{
     }
 
     //end getters and setters
+    //Method implementation
+    @Override
+    public int setVacation(String speciality){
+        switch (speciality){
+            case "Owner":
+                return 35;
+            case "seller":
+                return 25;
+            case "Deposit":
+                return 15;
+        }
+        System.out.println("No valid speciality");
+        return 0;
+    }
+
+    //end method implementation
 }

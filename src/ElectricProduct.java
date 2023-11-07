@@ -1,15 +1,23 @@
+import java.time.LocalDate;
 import java.util.Objects;
 
-public class ElectricProduct extends Product{
+public class ElectricProduct extends Product implements Costable,Available, Sellable,StockChangeable{
+    //The static product counter expand itself any time a product is created but initialice in 0 every time the
+    //program initiate
+    static int productCounter;
+    static {
+        productCounter=0;
+    }
     private double voltageRate;//The voltage admitted for the product in V (volts)
     private double power;//The power consumed for the product in kW (kiloWatt)
-
     private String electricId;//The id of the product
+
 
     //Constructor
     public ElectricProduct(String productName,String productDescription){
         super(productName,productDescription);
         this.setElectricId();
+        productCounter++;
     }
     //End constructor
 
@@ -70,5 +78,42 @@ public class ElectricProduct extends Product{
 
 
     //end override methods
+
+    //interface methods
+    @Override
+    public double defineCost(double supplierCost,double transportCost,double anotherCost){
+        return supplierCost+transportCost+anotherCost;
+    }
+
+    @Override
+    public boolean checkAvailability(int stock) {
+        stock=this.getStock();
+        if (stock<=0){
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public void removeStock(int amountSold) {
+        boolean thereIsStock=this.checkAvailability(this.getStock());
+        if(thereIsStock && amountSold<=this.getStock()){
+            int newStock =this.getStock()-amountSold;
+            this.setStock(newStock);
+            System.out.println("your new stock is: "+newStock);
+        }else{
+            System.out.println("you cant sell that amount");
+        }
+    }
+
+
+    @Override
+    public LocalDate transactionDate(){
+        System.out.println("the day of the transaction is");
+        return LocalDate.now();
+    }
+
+
+    //end interface methods
 
 }

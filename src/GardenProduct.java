@@ -1,7 +1,9 @@
 import java.util.Objects;
 
 public class GardenProduct  extends Product{
+
     private boolean itsPoison;//Check if the product is poison or not
+
 
     private String gardenId;
     //constructor
@@ -9,6 +11,8 @@ public class GardenProduct  extends Product{
         super(productName,productDescription);
         this.itsPoison=itsPoison;
         this.gardenId=setGardenId();
+
+
     }
     //End constructor
 
@@ -21,6 +25,8 @@ public class GardenProduct  extends Product{
     public void setItsPoison(boolean itsPoison) {
         this.itsPoison = itsPoison;
     }
+
+
 
     public String getGardenId() {
         return gardenId;

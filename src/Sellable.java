@@ -7,6 +7,6 @@ if there is no stock it should say a message that that can be sold
 
 
  */
-public interface Selleable {
-    public void removeStock(Object product,double amountSold,boolean thereIsStock);
+public interface Sellable {
+    public void removeStock(int amountSold);
 }
