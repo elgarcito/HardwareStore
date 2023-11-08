@@ -49,6 +49,9 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
     //end getters and setters
 
     //methods
+    public static void showSomething(){
+        System.out.println("la la all");
+    }
     //end methods
 
     //override methods
