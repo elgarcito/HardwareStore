@@ -103,9 +103,9 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
         if(thereIsStock && amountSold<=this.getStock()){
             int newStock =this.getStock()-amountSold;
             this.setStock(newStock);
-            System.out.println("your new stock is: "+newStock);
+            System.out.println("your new stock of this electric product is: "+newStock);
         }else{
-            System.out.println("you cant sell that amount");
+            System.out.println("you can't sell that amount of this electric product");
         }
     }
 

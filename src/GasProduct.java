@@ -1,6 +1,7 @@
+import java.time.LocalDate;
 import java.util.Objects;
 
-public class GasProduct extends Product {
+public class GasProduct extends Product implements Costable,Available, Sellable,StockChangeable{
     private String typeOfGas;// compressed gas or natural gas
     private double gasPressure;
 
@@ -71,6 +72,44 @@ public class GasProduct extends Product {
     }
 
     //end override methods
+
+    //Interface methods
+    @Override
+    public double defineCost(double supplierCost,double transportCost,double anotherCost){
+        return supplierCost+transportCost+anotherCost;
+    }
+
+    @Override
+    public boolean checkAvailability(int stock) {
+        stock=this.getStock();
+        //You consider that your minimum stock must be 10 units if this gas product
+        if (stock<=10){
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public void removeStock(int amountSold) {
+        boolean thereIsStock=this.checkAvailability(this.getStock());
+        if(thereIsStock && amountSold<=this.getStock()){
+            int newStock =this.getStock()-amountSold;
+            this.setStock(newStock);
+            System.out.println("your new stock of this gas related product is: "+newStock);
+        }else{
+            System.out.println("you can't sell that amount of this gas product, you need to have at least: \n" +
+                    10+" units in your stock.");
+        }
+    }
+
+
+    @Override
+    public LocalDate transactionDate(){
+        System.out.println("the day of the transaction is");
+        return LocalDate.now();
+    }
+
+    //End interface methods
 
 
 }
