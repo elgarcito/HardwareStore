@@ -95,7 +95,7 @@ public class GasProduct extends Product implements Costable,Available, Sellable,
         if(thereIsStock && amountSold<=this.getStock()){
             int newStock =this.getStock()-amountSold;
             this.setStock(newStock);
-            System.out.println("your new stock of this gas related product is: "+newStock);
+            System.out.println("your new stock of this gas related product is: "+newStock+".");
         }else{
             System.out.println("you can't sell that amount of this gas product, you need to have at least: \n" +
                     10+" units in your stock.");
