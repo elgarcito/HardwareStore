@@ -32,7 +32,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Example
-        LOGGER.info("Hello and welcome to hardware store!");
+        LOGGER.info("Hello and welcome to hardware store!!");
         ElectricProduct.showSomething();
         System.out.println("ligthBulb");
         ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
