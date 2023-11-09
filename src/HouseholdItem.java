@@ -1,4 +1,8 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class HouseholdItem extends Product{
+    private static final Logger LOGGER= LogManager.getLogger(HouseholdItem.class);
     private boolean itIsASet;//It check it the product it is a set or not for example a set of kitchen knifes
     private int unitsPerSet; //If it is a set it tells how many items it has
 

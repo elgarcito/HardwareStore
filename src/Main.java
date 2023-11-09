@@ -1,6 +1,7 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+
 /*Hardware store
 In this project, we have a hardware store that sells different products.
 We represent this product using classes.
@@ -30,11 +31,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LOGGER.warn("This is an example log message.");
         //Example
-        System.out.println("Hello and welcome to hardware store!");
-
-
+        LOGGER.info("Hello and welcome to hardware store!");
+        ElectricProduct.showSomething();
         System.out.println("ligthBulb");
         ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
         System.out.println();
@@ -73,6 +72,12 @@ public class Main {
         gasBurner2.removeStock(5);
         System.out.println(gasBurner2.getStock());
         System.out.println(gasBurner.transactionDate());
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        ConstructionProduct sand =new ConstructionProduct("Sand","White sand","Tn");
+        LOGGER.info(sand.checkLicence(true,"ABC",3));
 
 
 

@@ -1,7 +1,11 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public final class PayingRates {
 
     //Doing private the constructor the final class cant be initialized
     private PayingRates(){}
+    private static final Logger LOGGER= LogManager.getLogger(PayingRates.class);
     //How much you pay per hour to a category of employee
     public static int productCounter;
     //initialization method using static block
@@ -16,7 +20,7 @@ public final class PayingRates {
                 "Seller: "+ getSELLER_RATE()+" USD/h"+
                 "\nDeposit employee: "+getDEPOSIT_RATE()+" USD/h"+
                 "\nOwner: "+getOWNER_RATE()+" USD/h";
-        System.out.println(message);
+        LOGGER.info(message);
     }
 
     public static double getSELLER_RATE() {

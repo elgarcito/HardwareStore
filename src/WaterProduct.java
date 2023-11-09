@@ -1,4 +1,8 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class WaterProduct extends Product{
+    private static final Logger LOGGER= LogManager.getLogger(WaterProduct.class);
     double maxPressure;//Max pressure of the water component
 
     //Constructor

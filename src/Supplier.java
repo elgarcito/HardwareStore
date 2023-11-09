@@ -3,9 +3,9 @@ public class Supplier extends Person {
     private String productSupplied;//What kind of product supplies
 
     //Constructor
-    public Supplier(String personName, String personEmail, String phoneNumber,String productSuplied) {
+    public Supplier(String personName, String personEmail, String phoneNumber,String productSupplied) {
         super(personName, personEmail, phoneNumber);
-        this.productSupplied=productSuplied;
+        this.productSupplied=productSupplied;
     }
 
     //end constructor
@@ -16,8 +16,8 @@ public class Supplier extends Person {
         return productSupplied;
     }
 
-    public void setProductSupplied(String productSuplied) {
-        this.productSupplied = productSuplied;
+    public void setProductSupplied(String productSupplied) {
+        this.productSupplied = productSupplied;
     }
 
     //end getter and setter

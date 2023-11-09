@@ -1,4 +1,7 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 public class Employee extends Person implements VacationAble{
+    private static final Logger LOGGER= LogManager.getLogger(Employee.class);
     private String personalId;//The personal id of the worker
     private double costPerHour;//The pay per hour of the worker
     private String speciality;//What kind of job the worker does
@@ -49,7 +52,7 @@ public class Employee extends Person implements VacationAble{
             case "Deposit":
                 return 15;
         }
-        System.out.println("No valid speciality");
+        LOGGER.info("No valid speciality");
         return 0;
     }
 

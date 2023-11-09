@@ -1,7 +1,11 @@
 import java.time.LocalDate;
 import java.util.Objects;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 public class GasProduct extends Product implements Costable,Available, Sellable,StockChangeable{
+    private static final Logger LOGGER= LogManager.getLogger(GasProduct.class);
     private String typeOfGas;// compressed gas or natural gas
     private double gasPressure;
 
@@ -95,9 +99,9 @@ public class GasProduct extends Product implements Costable,Available, Sellable,
         if(thereIsStock && amountSold<=this.getStock()){
             int newStock =this.getStock()-amountSold;
             this.setStock(newStock);
-            System.out.println("your new stock of this gas related product is: "+newStock+".");
+            LOGGER.info("your new stock of this gas related product is: "+newStock+".");
         }else{
-            System.out.println("you can't sell that amount of this gas product, you need to have at least: \n" +
+            LOGGER.info("you can't sell that amount of this gas product, you need to have at least: \n" +
                     10+" units in your stock.");
         }
     }
@@ -105,7 +109,7 @@ public class GasProduct extends Product implements Costable,Available, Sellable,
 
     @Override
     public LocalDate transactionDate(){
-        System.out.println("the day of the transaction is");
+        LOGGER.info("the day of the transaction is");
         return LocalDate.now();
     }
 

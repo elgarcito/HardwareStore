@@ -1,5 +1,7 @@
 import java.time.LocalDate;
 import java.util.Objects;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ElectricProduct extends Product implements Costable,Available, Sellable,StockChangeable{
     //The static product counter expand itself any time a product is created but initialice in 0 every time the
@@ -7,7 +9,9 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
     static int productCounter;
     static {
         productCounter=0;
+        System.setProperty("log4j.configurationFile", "log4j2.xml");
     }
+    private static final Logger LOGGER= LogManager.getLogger(ElectricProduct.class);
     private double voltageRate;//The voltage admitted for the product in V (volts)
     private double power;//The power consumed for the product in kW (kiloWatt)
     private String electricId;//The id of the product
@@ -50,7 +54,7 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
 
     //methods
     public static void showSomething(){
-        System.out.println("la la all");
+        LOGGER.info("la la all");
     }
     //end methods
 
@@ -103,16 +107,17 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
         if(thereIsStock && amountSold<=this.getStock()){
             int newStock =this.getStock()-amountSold;
             this.setStock(newStock);
-            System.out.println("your new stock of this electric product is: "+newStock);
+            LOGGER.info("your new stock of this electric product is: "+newStock);
         }else{
-            System.out.println("you can't sell that amount of this electric product");
+            LOGGER.info("you can't sell that amount of this electric product");
         }
     }
 
 
     @Override
     public LocalDate transactionDate(){
-        System.out.println("the day of the transaction is");
+        LOGGER.info("the day of the transaction is \n" +
+                LocalDate.now());
         return LocalDate.now();
     }
 

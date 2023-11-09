@@ -1,6 +1,10 @@
 import java.util.Objects;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 public class GardenProduct  extends Product{
+    private static final Logger LOGGER= LogManager.getLogger(GardenProduct.class);
 
     private boolean itsPoison;//Check if the product is poison or not
 

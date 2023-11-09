@@ -1,5 +1,5 @@
 /*
-This interface allow us to remove from the stock the amount sold, it needs:
+This interface allows us to remove from the stock the amount sold, it needs:
 A product of any category
 amountSold: An amount to sold
 thereIsStock: first we need to check if there is stock or no
