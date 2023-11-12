@@ -33,9 +33,11 @@ public class Main {
 
         //Example
         LOGGER.info("Hello and welcome to hardware store!!");
-        ElectricProduct.showSomething();
+       // ElectricProduct.showSomething();
         System.out.println("ligthBulb");
         ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
+        lightBulb.setPower(10);
+        System.out.println(lightBulb.getPower());
         System.out.println();
         System.out.println();
         System.out.println();
@@ -53,9 +55,10 @@ public class Main {
         System.out.println("ligthBulb3");
         ElectricProduct lightBulb3=new ElectricProduct("Light bulb3","led light bulb");
         lightBulb3.setStock(10);
-        lightBulb3.removeStock(5);
+        lightBulb3.removeStock(10);
         System.out.println(lightBulb3.getStock());
         System.out.println(lightBulb3.transactionDate());
+        lightBulb3.setVoltageRate(10);
 
         System.out.println();
         System.out.println();
@@ -78,6 +81,13 @@ public class Main {
         System.out.println();
         ConstructionProduct sand =new ConstructionProduct("Sand","White sand","Tn");
         LOGGER.info(sand.checkLicence(true,"ABC",3));
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        //Check personalized exception
+        Employee carlosRusso=new Employee("carlos","123@gmail.com","12345678","seller");
+        carlosRusso.checkEmployeeData();
 
 
 

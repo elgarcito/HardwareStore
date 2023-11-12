@@ -1,5 +1,9 @@
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Objects;
+import java.util.concurrent.ExecutionException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -9,7 +13,11 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
     static int productCounter;
     static {
         productCounter=0;
-        System.setProperty("log4j.configurationFile", "log4j2.xml");
+        try (FileReader fileReader=new FileReader("log4j2.xml")){
+            System.setProperty("log4j.configurationFile", "log4j2.xml");
+        }catch (IOException e){
+            System.out.println(e);
+        }
     }
     private static final Logger LOGGER= LogManager.getLogger(ElectricProduct.class);
     private double voltageRate;//The voltage admitted for the product in V (volts)
@@ -27,23 +35,59 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
 
     //Getters and setters
     public double getVoltageRate() {
-        return voltageRate;
+        try {
+            return voltageRate;
+        }catch (RuntimeException f){
+            LOGGER.error("There was a runtime exception retrieving the voltage : "+f+" please try" +
+                    " again later.The default value will be 0 V");
+        }
+        return 0;
     }
 
     public void setVoltageRate(double voltageRate) {
-        this.voltageRate = voltageRate;
+        try {
+            this.voltageRate = voltageRate;
+        }catch (Exception e){
+                LOGGER.error("There was an error setting the voltage rate: "+e+" please try" +
+                        " again later");
+        }
+
     }
 
     public double getPower() {
-        return power;
+        try {
+            return power;
+        }catch (RuntimeException f){
+            LOGGER.error("There was a runtime exception retrieving the power : "+f+" please try" +
+                    " again later");
+        }catch (Exception e){
+            LOGGER.error("There was an error retrieving the power : "+e+" please try" +
+                    " again later");
+        }
+        finally {
+            LOGGER.info("If the value is 0 then some error happened or it wasn't set yet");
+        }
+        return 0;
     }
 
     public void setPower(double power) {
-        this.power = power;
+        try {
+            this.power = power;
+        }catch(RuntimeException f){
+            LOGGER.error("There was a runtime exception setting the power : "+f+" please try" +
+                    " again later");
+        }
+
     }
 
     public String getElectricId() {
-        return electricId;
+        try {
+            return electricId;
+        } catch (RuntimeException e){
+            LOGGER.error("There was an error retrieving the id : "+e+" please try" +
+                    " again later the default value will be null");
+        }
+        return null;
     }
 
     public void setElectricId() {
@@ -53,9 +97,12 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
     //end getters and setters
 
     //methods
-    public static void showSomething(){
-        LOGGER.info("la la all");
-    }
+
+
+
+
+
+
     //end methods
 
     //override methods
@@ -94,6 +141,7 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
 
     @Override
     public boolean checkAvailability(int stock) {
+
         stock=this.getStock();
         if (stock<=0){
             return false;
@@ -103,14 +151,14 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
 
     @Override
     public void removeStock(int amountSold) {
-        boolean thereIsStock=this.checkAvailability(this.getStock());
-        if(thereIsStock && amountSold<=this.getStock()){
+            boolean thereIsStock=this.checkAvailability(this.getStock());
+            if(thereIsStock && amountSold<=this.getStock()){
             int newStock =this.getStock()-amountSold;
             this.setStock(newStock);
             LOGGER.info("your new stock of this electric product is: "+newStock);
-        }else{
-            LOGGER.info("you can't sell that amount of this electric product");
-        }
+            }else{
+                LOGGER.info("you can't sell that amount of this electric product");
+            }
     }
 
 
@@ -120,8 +168,8 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
                 LocalDate.now());
         return LocalDate.now();
     }
-
-
     //end interface methods
+
+
 
 }

@@ -11,3 +11,352 @@
 2023-11-09
 10:23:22.668 [main] INFO  ConstructionProduct - License is OK
 10:23:22.670 [main] INFO  Main - true
+11:06:36.876 [main] INFO  Main - Hello and welcome to hardware store!!
+11:06:36.882 [main] INFO  ElectricProduct - la la all
+11:06:36.885 [main] INFO  ElectricProduct - your new stock of this electric product is: 5
+11:06:36.885 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+11:06:36.887 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+11:06:36.887 [main] INFO  GasProduct - the day of the transaction is
+11:06:36.891 [main] INFO  ConstructionProduct - License is OK
+11:06:36.892 [main] INFO  Main - true
+15:26:18.707 [main] INFO  Main - Hello and welcome to hardware store!!
+15:26:18.713 [main] INFO  ElectricProduct - la la all
+15:26:18.716 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+15:26:18.725 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+15:26:18.727 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+15:26:18.727 [main] INFO  GasProduct - the day of the transaction is
+15:26:18.728 [main] INFO  ConstructionProduct - License is OK
+15:26:18.730 [main] INFO  Main - true
+15:29:15.280 [main] INFO  Main - Hello and welcome to hardware store!!
+15:29:15.286 [main] INFO  ElectricProduct - la la all
+15:29:15.288 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+15:29:15.297 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+15:29:15.299 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+15:29:15.299 [main] INFO  GasProduct - the day of the transaction is
+15:29:15.300 [main] INFO  ConstructionProduct - License is OK
+15:29:15.301 [main] INFO  Main - true
+15:36:33.611 [main] INFO  Main - Hello and welcome to hardware store!!
+15:36:33.617 [main] INFO  ElectricProduct - la la all
+15:36:33.620 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+15:36:33.629 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+15:36:33.631 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+15:36:33.632 [main] INFO  GasProduct - the day of the transaction is
+15:36:33.633 [main] INFO  ConstructionProduct - License is OK
+15:36:33.633 [main] INFO  Main - true
+15:39:36.012 [main] INFO  Main - Hello and welcome to hardware store!!
+15:39:36.018 [main] INFO  ElectricProduct - la la all
+15:39:36.020 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+15:39:36.031 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+15:39:36.033 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+15:39:36.033 [main] INFO  GasProduct - the day of the transaction is
+15:39:36.035 [main] INFO  ConstructionProduct - License is OK
+15:39:36.036 [main] INFO  Main - true
+15:40:49.164 [main] INFO  Main - Hello and welcome to hardware store!!
+15:40:49.169 [main] INFO  ElectricProduct - la la all
+15:40:49.172 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+15:40:49.181 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+15:40:49.182 [main] ERROR ElectricProduct - There was an error setting the voltage rate: java.lang.NumberFormatException: For input string: "asd" please try again later
+15:40:49.184 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+15:40:49.185 [main] INFO  GasProduct - the day of the transaction is
+15:40:49.188 [main] INFO  ConstructionProduct - License is OK
+15:40:49.190 [main] INFO  Main - true
+16:21:40.352 [main] INFO  Main - Hello and welcome to hardware store!!
+16:21:40.360 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+16:21:40.369 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+16:21:40.370 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+16:21:40.370 [main] INFO  GasProduct - the day of the transaction is
+16:21:40.371 [main] INFO  ConstructionProduct - License is OK
+16:21:40.372 [main] INFO  Main - true
+16:45:25.076 [main] INFO  Main - Hello and welcome to hardware store!!
+16:45:25.082 [main] ERROR ElectricProduct - There was an error retrieving the power the default value will be 0 kW
+16:45:25.084 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+16:45:25.093 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+16:45:25.094 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+16:45:25.095 [main] INFO  GasProduct - the day of the transaction is
+16:45:25.096 [main] INFO  ConstructionProduct - License is OK
+16:45:25.097 [main] INFO  Main - true
+16:55:53.168 [main] INFO  Main - Hello and welcome to hardware store!!
+16:55:53.174 [main] INFO  ElectricProduct - If the value is 0 then some error happened
+16:55:53.176 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+16:55:53.185 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+16:55:53.188 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+16:55:53.188 [main] INFO  GasProduct - the day of the transaction is
+16:55:53.189 [main] INFO  ConstructionProduct - License is OK
+16:55:53.191 [main] INFO  Main - true
+16:56:49.768 [main] INFO  Main - Hello and welcome to hardware store!!
+16:56:49.774 [main] INFO  ElectricProduct - If the value is 0 then some error happened
+16:56:49.777 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+16:56:49.789 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+16:56:49.790 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+16:56:49.791 [main] INFO  GasProduct - the day of the transaction is
+16:56:49.792 [main] INFO  ConstructionProduct - License is OK
+16:56:49.793 [main] INFO  Main - true
+16:57:50.484 [main] INFO  Main - Hello and welcome to hardware store!!
+16:57:50.490 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+16:57:50.493 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+16:57:50.501 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-09
+16:57:50.503 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+16:57:50.503 [main] INFO  GasProduct - the day of the transaction is
+16:57:50.504 [main] INFO  ConstructionProduct - License is OK
+16:57:50.505 [main] INFO  Main - true
+08:29:46.477 [main] INFO  Main - Hello and welcome to hardware store!!
+08:29:46.483 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+08:29:46.485 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+08:29:46.496 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+08:29:46.498 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+08:29:46.499 [main] INFO  GasProduct - the day of the transaction is
+08:29:46.501 [main] INFO  ConstructionProduct - License is OK
+08:29:46.502 [main] INFO  Main - true
+08:59:13.018 [main] INFO  Main - Hello and welcome to hardware store!!
+08:59:13.025 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+08:59:13.029 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+08:59:13.039 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+08:59:13.041 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+08:59:13.041 [main] INFO  GasProduct - the day of the transaction is
+08:59:13.042 [main] INFO  ConstructionProduct - License is OK
+08:59:13.045 [main] INFO  Main - true
+08:59:13.048 [main] ERROR Employee - The name is too long, pleas make it shorter
+09:00:48.906 [main] INFO  Main - Hello and welcome to hardware store!!
+09:00:48.912 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+09:00:48.914 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+09:00:48.923 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+09:00:48.925 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+09:00:48.926 [main] INFO  GasProduct - the day of the transaction is
+09:00:48.928 [main] INFO  ConstructionProduct - License is OK
+09:00:48.929 [main] INFO  Main - true
+09:00:48.931 [main] INFO  Employee - The name is OK
+09:11:05.243 [main] INFO  Main - Hello and welcome to hardware store!!
+09:11:05.249 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+09:11:05.251 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+09:11:05.260 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+09:11:05.263 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+09:11:05.263 [main] INFO  GasProduct - the day of the transaction is
+09:11:05.264 [main] INFO  ConstructionProduct - License is OK
+09:11:05.265 [main] INFO  Main - true
+09:11:05.268 [main] INFO  Employee - The name is has the right length
+09:11:05.268 [main] ERROR Employee - The employee name has a number please correct it
+09:25:08.359 [main] INFO  Main - Hello and welcome to hardware store!!
+09:25:08.365 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+09:25:08.367 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+09:25:08.377 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+09:25:08.379 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+09:25:08.379 [main] INFO  GasProduct - the day of the transaction is
+09:25:08.380 [main] INFO  ConstructionProduct - License is OK
+09:25:08.381 [main] INFO  Main - true
+09:25:08.384 [main] INFO  Employee - The name is has the right length
+09:25:08.384 [main] ERROR Employee - The employee name has a number, please correct it
+09:25:08.385 [main] ERROR Employee - Please only use a @gmail.com email
+09:25:27.399 [main] INFO  Main - Hello and welcome to hardware store!!
+09:25:27.405 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+09:25:27.407 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+09:25:27.416 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+09:25:27.418 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+09:25:27.419 [main] INFO  GasProduct - the day of the transaction is
+09:25:27.420 [main] INFO  ConstructionProduct - License is OK
+09:25:27.423 [main] INFO  Main - true
+09:25:27.426 [main] INFO  Employee - The name is has the right length
+09:25:27.426 [main] ERROR Employee - The employee name has a number, please correct it
+09:25:27.426 [main] INFO  Employee - The gmail format is OK, only gmail mails
+09:25:39.880 [main] INFO  Main - Hello and welcome to hardware store!!
+09:25:39.886 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+09:25:39.889 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+09:25:39.904 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+09:25:39.908 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+09:25:39.908 [main] INFO  GasProduct - the day of the transaction is
+09:25:39.910 [main] INFO  ConstructionProduct - License is OK
+09:25:39.911 [main] INFO  Main - true
+09:25:39.914 [main] INFO  Employee - The name is has the right length
+09:25:39.914 [main] INFO  Employee - The employee name not contains a number.
+09:25:39.915 [main] INFO  Employee - The gmail format is OK, only gmail mails
+09:43:14.692 [main] INFO  Main - Hello and welcome to hardware store!!
+09:43:14.698 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+09:43:14.701 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+09:43:14.710 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+09:43:14.713 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+09:43:14.713 [main] INFO  GasProduct - the day of the transaction is
+09:43:14.715 [main] INFO  ConstructionProduct - License is OK
+09:43:14.716 [main] INFO  Main - true
+09:43:14.719 [main] INFO  Employee - The name is has the right length
+09:43:14.719 [main] INFO  Employee - The employee name not contains a number.
+09:43:14.720 [main] INFO  Employee - The gmail format is OK, only gmail mails
+09:43:14.723 [main] ERROR Employee - The phone number it has 5 digits, less than 8 digits
+09:45:01.066 [main] INFO  Main - Hello and welcome to hardware store!!
+09:45:01.072 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+09:45:01.074 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+09:45:01.085 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+09:45:01.087 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+09:45:01.087 [main] INFO  GasProduct - the day of the transaction is
+09:45:01.088 [main] INFO  ConstructionProduct - License is OK
+09:45:01.089 [main] INFO  Main - true
+09:45:01.092 [main] INFO  Employee - The name is has the right length
+09:45:01.092 [main] INFO  Employee - The employee name not contains a number.
+09:45:01.093 [main] INFO  Employee - The gmail format is OK, only gmail mails
+09:45:01.096 [main] ERROR Employee - The phone number it has 5 digits, less than 8 digits
+09:59:18.781 [main] INFO  Main - Hello and welcome to hardware store!!
+09:59:18.786 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+09:59:18.790 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+09:59:18.805 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+09:59:18.836 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+09:59:18.836 [main] INFO  GasProduct - the day of the transaction is
+09:59:18.838 [main] INFO  ConstructionProduct - License is OK
+09:59:18.839 [main] INFO  Main - true
+09:59:18.844 [main] INFO  Employee - The name is has the right length
+09:59:18.844 [main] INFO  Employee - The employee name not contains a number.
+09:59:18.844 [main] INFO  Employee - The gmail format is OK, only gmail mails
+09:59:18.848 [main] ERROR Employee - The phone number it has 5 digits, less than 8 digits
+09:59:18.851 [main] INFO  Employee - Your specialty seller is Ok
+09:59:18.852 [main] INFO  Employee - Thanks for checking the employee status
+09:59:33.055 [main] INFO  Main - Hello and welcome to hardware store!!
+09:59:33.060 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+09:59:33.063 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+09:59:33.071 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+09:59:33.074 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+09:59:33.074 [main] INFO  GasProduct - the day of the transaction is
+09:59:33.076 [main] INFO  ConstructionProduct - License is OK
+09:59:33.077 [main] INFO  Main - true
+09:59:33.081 [main] INFO  Employee - The name is has the right length
+09:59:33.083 [main] INFO  Employee - The employee name not contains a number.
+09:59:33.083 [main] INFO  Employee - The gmail format is OK, only gmail mails
+09:59:33.085 [main] ERROR Employee - The phone number it has 5 digits, less than 8 digits
+09:59:33.086 [main] ERROR Employee - Your speciality selor doesn't exist, pleaseenter a valid one: seller or deposit
+09:59:33.086 [main] INFO  Employee - Thanks for checking the employee status
+10:00:33.433 [main] INFO  Main - Hello and welcome to hardware store!!
+10:00:33.439 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+10:00:33.442 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+10:00:33.453 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+10:00:33.456 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+10:00:33.456 [main] INFO  GasProduct - the day of the transaction is
+10:00:33.457 [main] INFO  ConstructionProduct - License is OK
+10:00:33.458 [main] INFO  Main - true
+10:00:33.462 [main] INFO  Employee - The name is has the right length
+10:00:33.462 [main] INFO  Employee - The employee name not contains a number.
+10:00:33.462 [main] INFO  Employee - The gmail format is OK, only gmail mails
+10:00:33.466 [main] ERROR Employee - The phone number it has 9 digits, more than 8 digits
+10:00:33.466 [main] INFO  Employee - Your specialty seller is Ok
+10:00:33.466 [main] INFO  Employee - Thanks for checking the employee status
+10:02:14.442 [main] INFO  Main - Hello and welcome to hardware store!!
+10:02:14.448 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+10:02:14.452 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+10:02:14.462 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+10:02:14.464 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+10:02:14.464 [main] INFO  GasProduct - the day of the transaction is
+10:02:14.465 [main] INFO  ConstructionProduct - License is OK
+10:02:14.466 [main] INFO  Main - true
+10:02:14.468 [main] INFO  Employee - The name is has the right length
+10:02:14.469 [main] INFO  Employee - The employee name not contains a number.
+10:02:14.469 [main] INFO  Employee - The gmail format is OK, only gmail mails
+10:02:14.471 [main] ERROR Employee - The phone number it has 9 digits, more than 8 digits
+10:02:14.473 [main] INFO  Employee - Your specialty seller is Ok
+10:02:14.473 [main] INFO  Employee - Thanks for checking the employee status
+10:03:02.472 [main] INFO  Main - Hello and welcome to hardware store!!
+10:03:02.479 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+10:03:02.482 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+10:03:02.493 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+10:03:02.495 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+10:03:02.496 [main] INFO  GasProduct - the day of the transaction is
+10:03:02.497 [main] INFO  ConstructionProduct - License is OK
+10:03:02.498 [main] INFO  Main - true
+10:03:02.505 [main] INFO  Employee - The name is has the right length
+10:03:02.506 [main] INFO  Employee - The employee name not contains a number.
+10:03:02.506 [main] INFO  Employee - The gmail format is OK, only gmail mails
+10:03:02.510 [main] ERROR Employee - The phone number it has 9 digits, more than 8 digits
+10:03:02.511 [main] INFO  Employee - Your specialty seller is Ok
+10:03:02.511 [main] INFO  Employee - Thanks for checking the employee status
+10:03:37.737 [main] INFO  Main - Hello and welcome to hardware store!!
+10:03:37.744 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+10:03:37.746 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+10:03:37.755 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+10:03:37.756 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+10:03:37.757 [main] INFO  GasProduct - the day of the transaction is
+10:03:37.758 [main] INFO  ConstructionProduct - License is OK
+10:03:37.759 [main] INFO  Main - true
+10:03:37.762 [main] INFO  Employee - The name is has the right length
+10:03:37.762 [main] INFO  Employee - The employee name not contains a number.
+10:03:37.762 [main] INFO  Employee - The gmail format is OK, only gmail mails
+10:03:37.762 [main] INFO  Employee - The 8 digit phone number is Ok
+10:03:37.762 [main] INFO  Employee - Your specialty seller is Ok
+10:03:37.763 [main] INFO  Employee - Thanks for checking the employee status
+10:04:23.384 [main] INFO  Main - Hello and welcome to hardware store!!
+10:04:23.390 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+10:04:23.392 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+10:04:23.400 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+10:04:23.403 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+10:04:23.403 [main] INFO  GasProduct - the day of the transaction is
+10:04:23.404 [main] INFO  ConstructionProduct - License is OK
+10:04:23.405 [main] INFO  Main - true
+10:04:23.408 [main] INFO  Employee - The name is has the right length
+10:04:23.408 [main] INFO  Employee - The employee name not contains a number.
+10:04:23.409 [main] INFO  Employee - The gmail format is OK, only gmail mails
+10:04:23.409 [main] INFO  Employee - The 8 digit phone number is Ok
+10:04:23.409 [main] INFO  Employee - Your specialty seller is Ok
+10:04:23.409 [main] INFO  Employee - Thanks for checking the employee status
+10:04:38.962 [main] INFO  Main - Hello and welcome to hardware store!!
+10:04:38.969 [main] INFO  ElectricProduct - If the value is 0 then some error happened or it wasn't set yet
+10:04:38.972 [main] INFO  ElectricProduct - your new stock of this electric product is: 0
+10:04:38.987 [main] INFO  ElectricProduct - the day of the transaction is 
+2023-11-12
+10:04:38.990 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+10:04:38.990 [main] INFO  GasProduct - the day of the transaction is
+10:04:38.992 [main] INFO  ConstructionProduct - License is OK
+10:04:38.994 [main] INFO  Main - true
+10:04:39.002 [main] INFO  Employee - The name is has the right length
+10:04:39.002 [main] INFO  Employee - The employee name not contains a number.
+10:04:39.002 [main] INFO  Employee - The gmail format is OK, only gmail mails
+10:04:39.003 [main] INFO  Employee - The 8 digit phone number is Ok
+10:04:39.003 [main] INFO  Employee - Your specialty seller is Ok
+10:04:39.003 [main] INFO  Employee - Thanks for checking the employee status
