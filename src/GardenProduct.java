@@ -1,4 +1,7 @@
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -7,6 +10,9 @@ public class GardenProduct  extends Product{
     private static final Logger LOGGER= LogManager.getLogger(GardenProduct.class);
 
     private boolean itsPoison;//Check if the product is poison or not
+
+    //This is a public list
+    private static Set<GardenProduct> gardenProductSetList =new HashSet<GardenProduct>();
 
 
     private String gardenId;
@@ -44,7 +50,25 @@ public class GardenProduct  extends Product{
         return this.gardenId = "GR"+a;
     }
 
+    public static Set<GardenProduct> getGardenProductSetList() {
+        return gardenProductSetList;
+    }
+
+    public static void setGardenProductSetList(GardenProduct gardenProduct) {
+        GardenProduct.gardenProductSetList.add(gardenProduct);
+    }
+
     //end getter and setter
+    //Methods
+    public static void seeGardenProductList(){
+        for (GardenProduct gardenProduct:GardenProduct.getGardenProductSetList()) {
+            System.out.println();
+            LOGGER.info(gardenProduct.toString());
+        }
+    }
+    //End methods
+
+    //Method override
     @Override
     public String toString(){
         String poison;
