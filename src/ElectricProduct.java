@@ -64,9 +64,6 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
             LOGGER.error("There was an error retrieving the power : "+e+" please try" +
                     " again later");
         }
-        finally {
-            LOGGER.info("If the value is 0 then some error happened or it wasn't set yet");
-        }
         return 0;
     }
 

@@ -33,38 +33,33 @@ public class Main {
 
         //Example
         LOGGER.info("Hello and welcome to hardware store!!");
-       // ElectricProduct.showSomething();
-        System.out.println("ligthBulb");
+        System.out.println();
+        //Creating the first Electric product
         ElectricProduct lightBulb=new ElectricProduct("Light bulb","led light bulb");
+        //Getting the product name
+        LOGGER.info(lightBulb.toString());
+        //setting the power field
         lightBulb.setPower(10);
-        System.out.println(lightBulb.getPower());
+        //getting the power field
+        LOGGER.info(lightBulb.getPower());
+        //Using the method defineCost of the interface Costable override in Electric product
+        LOGGER.info(lightBulb.defineCost(1,0.01,0));
         System.out.println();
         System.out.println();
         System.out.println();
-        System.out.println(lightBulb.defineCost(1,0.01,0));
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println("ligthBulb2");
+        //Creating the second Electric product
         ElectricProduct lightBulb2=new ElectricProduct("Light bulb","led light bulb");
-        System.out.println(lightBulb2.getElectricId());
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println("ligthBulb3");
-        ElectricProduct lightBulb3=new ElectricProduct("Light bulb3","led light bulb");
-        lightBulb3.setStock(10);
-        lightBulb3.removeStock(10);
-        System.out.println(lightBulb3.getStock());
-        System.out.println(lightBulb3.transactionDate());
-        lightBulb3.setVoltageRate(10);
 
+        //getting the lightBulb2 id that used hashCode override to create an unique id
+        LOGGER.info(lightBulb2.getElectricId());
         System.out.println();
         System.out.println();
         System.out.println();
+        System.out.println();
+        //Checking if lightBulb is equal to lightBulb2 to implement hashCode and equals override
+        LOGGER.info(lightBulb.equals(lightBulb2));
 
-        System.out.println("gas burner");
+        //Creating a new gas Product
         GasProduct gasBurner=new GasProduct("Gas Burner","Gas kitchen burner");
         System.out.println();
         System.out.println();
@@ -73,28 +68,44 @@ public class Main {
         GasProduct gasBurner2=new GasProduct("Gas Burner","Gas kitchen burner");
         gasBurner2.setStock(8);
         gasBurner2.removeStock(5);
-        System.out.println(gasBurner2.getStock());
-        System.out.println(gasBurner.transactionDate());
+        LOGGER.info(gasBurner2.getStock());
+        LOGGER.info(gasBurner.transactionDate());
 
         System.out.println();
         System.out.println();
         System.out.println();
+        //Creating a product that is not part of Product but it is part of RawMaterial super
         ConstructionProduct sand =new ConstructionProduct("Sand","White sand","Tn");
+        //Using a method inside this class
         LOGGER.info(sand.checkLicence(true,"ABC",3));
         System.out.println();
         System.out.println();
         System.out.println();
         System.out.println();
-        //Check personalized exception
+        //Creating a new employee
         Employee carlosRusso=new Employee("carlos","123@gmail.com","12345678","seller");
+        System.out.println();
+        //Check personalized exception
         carlosRusso.checkEmployeeData();
-
-
-
-
-
-
-
-
+        //End check personalized exception
+        System.out.println();
+        //Adding this employee to the private static List employeeList
+        Employee.setEmployeeList(carlosRusso);
+        //Eng adding this employee to the private static List employeeList
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        //Creating a new employee
+        Employee carlosRusso2=new Employee("Jose Antonio","123@gmail.com","12345678","seller");
+        //Check personalized exception before adding in the list
+        System.out.println();
+        carlosRusso2.checkEmployeeData();
+        System.out.println();
+        //Adding this employee to the private static List employeeList
+        Employee.setEmployeeList(carlosRusso2);
+        System.out.println();
+        //Adding this employee to the private static List employeeList
+        //See all the employees of the company with the info
+        Employee.seeEmployeeList();
     }
 }
