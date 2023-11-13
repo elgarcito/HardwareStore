@@ -52,7 +52,7 @@ public class Main {
         //Creating the second Electric product
         ElectricProduct lightBulb2=new ElectricProduct("Light bulb","led light bulb");
 
-        //getting the lightBulb2 id that used hashCode override to create an unique id
+        //getting the lightBulb2 id that used hashCode override to create a unique id
         LOGGER.info(lightBulb2.getElectricId());
         System.out.println();
         System.out.println();
@@ -76,7 +76,7 @@ public class Main {
         System.out.println();
         System.out.println();
         System.out.println();
-        //Creating a product that is not part of Product but it is part of RawMaterial super
+        //Creating a product that is not part of Product, but it is part of RawMaterial super
         ConstructionProduct sand =new ConstructionProduct("Sand","White sand","Tn");
         //Using a method inside this class
         LOGGER.info(sand.checkLicence(true,"ABC",3));

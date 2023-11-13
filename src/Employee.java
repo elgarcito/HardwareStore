@@ -11,7 +11,7 @@ public class Employee extends Person implements VacationAble{
     private double costPerHour;//The pay per hour of the worker
     private String speciality;//What kind of job the worker does
 
-    public static List<Employee> employeeList=new ArrayList<Employee>();
+    public static final List<Employee> employeeList=new ArrayList<Employee>();
 
     //Constructor
     public Employee(String personName, String personEmail, String phoneNumber,String speciality) {
@@ -80,7 +80,7 @@ public class Employee extends Person implements VacationAble{
         return 0;
     }
 
-    //This method allow us to check if the employee name is longer than the maximum it is used to
+    //This method allows checking if the employee name is longer than the maximum it is used to
     // define the exception
     public void throwLongerEmployeeNameException(String employeeName)throws LongEmployeeNameException {
         if (employeeName.length()>20){
@@ -107,7 +107,7 @@ public class Employee extends Person implements VacationAble{
             LOGGER.info("The gmail format is OK, only gmail mails.");
         }
     }
-    //This exception check the phone number length
+    //This exception checks the phone number length
     public void throwPhoneNumberException(String employeePhoneNumber) throws PhoneNumberException {
         if (employeePhoneNumber.length()==8) {
             LOGGER.info("The 8 digit phone number is Ok.");
@@ -130,8 +130,8 @@ public class Employee extends Person implements VacationAble{
         }
     }
 
-    //Now the method that uses the try catch and in which we use the exception.This is the one
-    //that is going to be used in Main
+    //Now the method that uses the try catch and in which we use the exception.
+    // This is the one that is going to be used in Main
     public void checkEmployeeData(){
         try {
             throwLongerEmployeeNameException(this.getPersonName());

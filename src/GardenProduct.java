@@ -12,7 +12,7 @@ public class GardenProduct  extends Product{
     private boolean itsPoison;//Check if the product is poison or not
 
     //This is a public list
-    private static Set<GardenProduct> gardenProductSetList =new HashSet<GardenProduct>();
+    private static final Set<GardenProduct> gardenProductSetList =new HashSet<GardenProduct>();
 
 
     private String gardenId;
