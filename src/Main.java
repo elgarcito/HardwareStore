@@ -110,6 +110,7 @@ public class Main {
         //See all the employees of the company with the info
         Employee.seeEmployeeList();
         // Creating a set list of garden products
+
         GardenProduct gardenScissors=new GardenProduct("Big scissors","Big size scissors to cut grass",false);
         GardenProduct gardenScissors1=new GardenProduct("Medium scissors","Medium size scissors to cut grass",false);
         GardenProduct gardenScissors2=new GardenProduct("Small scissors","Small size scissors to cut grass",false);
@@ -122,7 +123,6 @@ public class Main {
         GardenProduct.setGardenProductSetList(gardenScissors2);
         //See the garden products data
         GardenProduct.seeGardenProductList();
-
 
     }
 }

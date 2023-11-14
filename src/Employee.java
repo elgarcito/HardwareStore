@@ -3,7 +3,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Employee extends Person implements VacationAble{
     private static final Logger LOGGER= LogManager.getLogger(Employee.class);
@@ -11,7 +13,11 @@ public class Employee extends Person implements VacationAble{
     private double costPerHour;//The pay per hour of the worker
     private String speciality;//What kind of job the worker does
 
+    //The list that saves the Object employees
     public static final List<Employee> employeeList=new ArrayList<Employee>();
+    //The list with the names only, this is public
+    public static final Set<String> resumedEmployeeInformationList=new HashSet<String>() {
+    };
 
     //Constructor
     public Employee(String personName, String personEmail, String phoneNumber,String speciality) {
@@ -149,10 +155,16 @@ public class Employee extends Person implements VacationAble{
     //This method allows iterating in the employeeList and retrieving the names of the employees
     public static void seeEmployeeList(){
         for (Employee employee:Employee.getEmployeeList()) {
-            System.out.println();
-            LOGGER.info("\nName: "+employee.getPersonName()+
+            //System.out.println();
+            String resumedInfo="\nName: "+employee.getPersonName()+
                     "\nSpeciality: "+ employee.getSpeciality()+
-                    "\nPhone number: "+employee.getPhoneNumber());
+                    "\nPhone number: "+employee.getPhoneNumber();
+            //Saving the resumed names in another string with arrays
+            Employee.resumedEmployeeInformationList.add(resumedInfo);
+        }
+        for (String resumedNames:Employee.resumedEmployeeInformationList) {
+            System.out.println();
+            LOGGER.info(resumedNames);
         }
     }
 
