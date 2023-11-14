@@ -1,6 +1,8 @@
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 
@@ -23,6 +25,8 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
     private double voltageRate;//The voltage admitted for the product in V (volts)
     private double power;//The power consumed for the product in kW (kiloWatt)
     private String electricId;//The id of the product
+
+    private static final List<ElectricProduct> electricProductArrayList=new ArrayList<ElectricProduct>();
 
 
     //Constructor
@@ -91,10 +95,21 @@ public class ElectricProduct extends Product implements Costable,Available, Sell
         this.electricId = "EL"+this.hashCode();
     }
 
+    //getter and setter to Arraylist
+
+    public static List<ElectricProduct> getElectricProductArrayList() {
+        return electricProductArrayList;
+    }
+
+    public static void setElectricProductArrayList(ElectricProduct electricProduct){
+        ElectricProduct.electricProductArrayList.add(electricProduct);
+    }
+
+    //end getter and setter to Arraylist
+
     //end getters and setters
 
     //methods
-
 
 
 

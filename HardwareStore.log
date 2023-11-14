@@ -210,3 +210,56 @@ Big scissors
 The full description is:
 Big size scissors to cut grass
 It is a non poisonous product
+22:25:24.925 [main] INFO  Main - Hello and welcome to hardware store!!
+22:25:24.943 [main] INFO  Main - The resume name of the product is:
+Light bulb
+The full description is:
+led light bulb
+22:25:24.946 [main] INFO  Main - 10.0
+22:25:24.947 [main] INFO  Main - 1.01
+22:25:24.947 [main] INFO  Main - EL1725986614
+22:25:24.947 [main] INFO  Main - true
+22:25:24.949 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+22:25:24.952 [main] INFO  Main - 8
+22:25:24.953 [main] INFO  GasProduct - the day of the transaction is
+22:25:24.953 [main] INFO  Main - 2023-11-13
+22:25:24.954 [main] INFO  ConstructionProduct - License is OK
+22:25:24.955 [main] INFO  Main - true
+22:25:24.959 [main] INFO  Employee - The name has the right length.
+22:25:24.959 [main] INFO  Employee - The employee name is OK and not contains any number.
+22:25:24.959 [main] INFO  Employee - The gmail format is OK, only gmail mails.
+22:25:24.959 [main] INFO  Employee - The 8 digit phone number is Ok.
+22:25:24.960 [main] INFO  Employee - The specialty seller is Ok.
+22:25:24.960 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
+22:25:24.960 [main] INFO  Employee - The employee carlos has been added to the employee list.
+22:25:24.960 [main] INFO  Employee - The name has the right length.
+22:25:24.961 [main] INFO  Employee - The employee name is OK and not contains any number.
+22:25:24.961 [main] INFO  Employee - The gmail format is OK, only gmail mails.
+22:25:24.961 [main] INFO  Employee - The 8 digit phone number is Ok.
+22:25:24.961 [main] INFO  Employee - The specialty seller is Ok.
+22:25:24.961 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
+22:25:24.961 [main] INFO  Employee - The employee Jose Antonio has been added to the employee list.
+22:25:24.976 [main] INFO  Employee - 
+Name: Jose Antonio
+Speciality: seller
+Phone number: 12345678
+22:25:24.977 [main] INFO  Employee - 
+Name: carlos
+Speciality: seller
+Phone number: 12345678
+22:25:24.992 [main] INFO  GardenProduct - The resume name of the product is:
+Small scissors
+The full description is:
+Small size scissors to cut grass
+It is a non poisonous product
+22:25:24.993 [main] INFO  GardenProduct - The resume name of the product is:
+Medium scissors
+The full description is:
+Medium size scissors to cut grass
+It is a non poisonous product
+22:25:24.993 [main] INFO  GardenProduct - The resume name of the product is:
+Big scissors
+The full description is:
+Big size scissors to cut grass
+It is a non poisonous product

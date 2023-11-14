@@ -109,8 +109,7 @@ public class Main {
         //Adding this employee to the private static List employeeList
         //See all the employees of the company with the info
         Employee.seeEmployeeList();
-        // Creating a set list of garden products
-
+        // Creating a set list of garden product
         GardenProduct gardenScissors=new GardenProduct("Big scissors","Big size scissors to cut grass",false);
         GardenProduct gardenScissors1=new GardenProduct("Medium scissors","Medium size scissors to cut grass",false);
         GardenProduct gardenScissors2=new GardenProduct("Small scissors","Small size scissors to cut grass",false);
@@ -123,6 +122,8 @@ public class Main {
         GardenProduct.setGardenProductSetList(gardenScissors2);
         //See the garden products data
         GardenProduct.seeGardenProductList();
+
+        System.out.println(Employee.resumedEmployeeInformationList);
 
     }
 }
