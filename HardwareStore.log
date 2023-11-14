@@ -1,265 +1,60 @@
-17:00:57.189 [main] INFO  Main - Hello and welcome to hardware store!!
-17:00:57.203 [main] INFO  Main - The resume name of the product is:
+16:13:22.942 [main] INFO  Main - Hello and welcome to hardware store!!
+16:13:22.958 [main] INFO  Main - The resume name of the product is:
 Light bulb
 The full description is:
 led light bulb
-17:00:57.206 [main] INFO  Main - 10.0
-17:00:57.206 [main] INFO  Main - 1.01
-17:00:57.206 [main] INFO  Main - EL1725986614
-17:00:57.206 [main] INFO  Main - true
-17:00:57.207 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+16:13:22.961 [main] INFO  Main - 10.0
+16:13:22.961 [main] INFO  Main - 1.01
+16:13:22.961 [main] INFO  Main - EL1725986614
+16:13:22.962 [main] INFO  Main - true
+16:13:22.968 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
 10 units in your stock.
-17:00:57.208 [main] INFO  Main - 8
-17:00:57.208 [main] INFO  GasProduct - the day of the transaction is
-17:00:57.216 [main] INFO  Main - 2023-11-13
-17:00:57.217 [main] INFO  ConstructionProduct - License is OK
-17:00:57.217 [main] INFO  Main - true
-17:00:57.220 [main] INFO  Employee - The name has the right length.
-17:00:57.221 [main] INFO  Employee - The employee name is OK and not contains any number.
-17:00:57.221 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-17:00:57.221 [main] INFO  Employee - The 8 digit phone number is Ok.
-17:00:57.221 [main] INFO  Employee - The specialty seller is Ok.
-17:00:57.222 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-17:00:57.222 [main] INFO  Employee - The employee carlos has been added to the employee list.
-17:00:57.222 [main] INFO  Employee - The name has the right length.
-17:00:57.222 [main] INFO  Employee - The employee name is OK and not contains any number.
-17:00:57.223 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-17:00:57.223 [main] INFO  Employee - The 8 digit phone number is Ok.
-17:00:57.223 [main] INFO  Employee - The specialty seller is Ok.
-17:00:57.223 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-17:00:57.223 [main] INFO  Employee - The employee Jose Antonio has been added to the employee list.
-17:00:57.233 [main] INFO  Employee - 
-Name: carlos
-Speciality: seller
-Phone number: 12345678
-17:00:57.233 [main] INFO  Employee - 
+16:13:22.969 [main] INFO  Main - 8
+16:13:22.971 [main] INFO  GasProduct - the day of the transaction is
+16:13:22.986 [main] INFO  Main - 2023-11-14
+16:13:22.989 [main] INFO  ConstructionProduct - License is OK
+16:13:22.989 [main] INFO  Main - true
+16:13:22.994 [main] INFO  Employee - The name has the right length.
+16:13:22.994 [main] INFO  Employee - The employee name is OK and not contains any number.
+16:13:22.994 [main] INFO  Employee - The gmail format is OK, only gmail mails.
+16:13:22.994 [main] INFO  Employee - The 8 digit phone number is Ok.
+16:13:22.995 [main] INFO  Employee - The specialty seller is Ok.
+16:13:22.995 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
+16:13:22.995 [main] INFO  Employee - The employee carlos has been added to the employee list.
+16:13:22.995 [main] INFO  Employee - The name has the right length.
+16:13:22.996 [main] INFO  Employee - The employee name is OK and not contains any number.
+16:13:22.996 [main] INFO  Employee - The gmail format is OK, only gmail mails.
+16:13:22.996 [main] INFO  Employee - The 8 digit phone number is Ok.
+16:13:22.996 [main] INFO  Employee - The specialty seller is Ok.
+16:13:22.996 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
+16:13:22.996 [main] INFO  Employee - The employee Jose Antonio has been added to the employee list.
+16:13:23.021 [main] INFO  Employee - 
 Name: Jose Antonio
 Speciality: seller
 Phone number: 12345678
-17:00:57.242 [main] INFO  GardenProduct - The resume name of the product is:
+16:13:23.021 [main] INFO  Employee - 
+Name: carlos
+Speciality: seller
+Phone number: 12345678
+16:13:23.038 [main] INFO  GardenProduct - The resume name of the product is:
 Small scissors
 The full description is:
 Small size scissors to cut grass
 It is a non poisonous product
-17:00:57.243 [main] INFO  GardenProduct - The resume name of the product is:
+16:13:23.039 [main] INFO  GardenProduct - The resume name of the product is:
 Medium scissors
 The full description is:
 Medium size scissors to cut grass
 It is a non poisonous product
-17:00:57.243 [main] INFO  GardenProduct - The resume name of the product is:
+16:13:23.040 [main] INFO  GardenProduct - The resume name of the product is:
 Big scissors
 The full description is:
 Big size scissors to cut grass
 It is a non poisonous product
-21:48:28.087 [main] INFO  Main - Hello and welcome to hardware store!!
-21:48:28.099 [main] INFO  Main - The resume name of the product is:
-Light bulb
-The full description is:
-led light bulb
-21:48:28.103 [main] INFO  Main - 10.0
-21:48:28.103 [main] INFO  Main - 1.01
-21:48:28.104 [main] INFO  Main - EL1725986614
-21:48:28.104 [main] INFO  Main - true
-21:48:28.106 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
-10 units in your stock.
-21:48:28.107 [main] INFO  Main - 8
-21:48:28.107 [main] INFO  GasProduct - the day of the transaction is
-21:48:28.117 [main] INFO  Main - 2023-11-13
-21:48:28.120 [main] INFO  ConstructionProduct - License is OK
-21:48:28.120 [main] INFO  Main - true
-21:48:28.124 [main] INFO  Employee - The name has the right length.
-21:48:28.124 [main] INFO  Employee - The employee name is OK and not contains any number.
-21:48:28.124 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-21:48:28.124 [main] INFO  Employee - The 8 digit phone number is Ok.
-21:48:28.125 [main] INFO  Employee - The specialty seller is Ok.
-21:48:28.125 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-21:48:28.125 [main] INFO  Employee - The employee carlos has been added to the employee list.
-21:48:28.125 [main] INFO  Employee - The name has the right length.
-21:48:28.125 [main] INFO  Employee - The employee name is OK and not contains any number.
-21:48:28.125 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-21:48:28.125 [main] INFO  Employee - The 8 digit phone number is Ok.
-21:48:28.126 [main] INFO  Employee - The specialty seller is Ok.
-21:48:28.126 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-21:48:28.126 [main] INFO  Employee - The employee Jose Antonio has been added to the employee list.
-21:48:28.140 [main] INFO  Employee - 
-Name: carlos
-Speciality: seller
-Phone number: 12345678
-21:48:28.140 [main] INFO  Employee - 
-Name: Jose Antonio
-Speciality: seller
-Phone number: 12345678
-21:48:28.153 [main] INFO  GardenProduct - The resume name of the product is:
-Small scissors
-The full description is:
-Small size scissors to cut grass
-It is a non poisonous product
-21:48:28.153 [main] INFO  GardenProduct - The resume name of the product is:
-Medium scissors
-The full description is:
-Medium size scissors to cut grass
-It is a non poisonous product
-21:48:28.153 [main] INFO  GardenProduct - The resume name of the product is:
-Big scissors
-The full description is:
-Big size scissors to cut grass
-It is a non poisonous product
-22:07:16.497 [main] INFO  Main - Hello and welcome to hardware store!!
-22:07:16.508 [main] INFO  Main - The resume name of the product is:
-Light bulb
-The full description is:
-led light bulb
-22:07:16.511 [main] INFO  Main - 10.0
-22:07:16.511 [main] INFO  Main - 1.01
-22:07:16.511 [main] INFO  Main - EL1725986614
-22:07:16.512 [main] INFO  Main - true
-22:07:16.513 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
-10 units in your stock.
-22:07:16.513 [main] INFO  Main - 8
-22:07:16.513 [main] INFO  GasProduct - the day of the transaction is
-22:07:16.513 [main] INFO  Main - 2023-11-13
-22:07:16.514 [main] INFO  ConstructionProduct - License is OK
-22:07:16.514 [main] INFO  Main - true
-22:07:16.517 [main] INFO  Employee - The name has the right length.
-22:07:16.518 [main] INFO  Employee - The employee name is OK and not contains any number.
-22:07:16.518 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-22:07:16.518 [main] INFO  Employee - The 8 digit phone number is Ok.
-22:07:16.518 [main] INFO  Employee - The specialty seller is Ok.
-22:07:16.518 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-22:07:16.519 [main] INFO  Employee - The employee carlos has been added to the employee list.
-22:07:16.519 [main] INFO  Employee - The name has the right length.
-22:07:16.519 [main] INFO  Employee - The employee name is OK and not contains any number.
-22:07:16.519 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-22:07:16.519 [main] INFO  Employee - The 8 digit phone number is Ok.
-22:07:16.519 [main] INFO  Employee - The specialty seller is Ok.
-22:07:16.519 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-22:07:16.520 [main] INFO  Employee - The employee Jose Antonio has been added to the employee list.
-22:07:16.529 [main] INFO  Employee - 
-Name: carlos
-Speciality: seller
-Phone number: 12345678
-22:07:16.530 [main] INFO  Employee - 
-Name: Jose Antonio
-Speciality: seller
-Phone number: 12345678
-22:07:16.539 [main] INFO  GardenProduct - The resume name of the product is:
-Small scissors
-The full description is:
-Small size scissors to cut grass
-It is a non poisonous product
-22:07:16.539 [main] INFO  GardenProduct - The resume name of the product is:
-Medium scissors
-The full description is:
-Medium size scissors to cut grass
-It is a non poisonous product
-22:07:16.539 [main] INFO  GardenProduct - The resume name of the product is:
-Big scissors
-The full description is:
-Big size scissors to cut grass
-It is a non poisonous product
-22:17:54.970 [main] INFO  Main - Hello and welcome to hardware store!!
-22:17:54.987 [main] INFO  Main - The resume name of the product is:
-Light bulb
-The full description is:
-led light bulb
-22:17:54.991 [main] INFO  Main - 10.0
-22:17:54.991 [main] INFO  Main - 1.01
-22:17:54.991 [main] INFO  Main - EL1725986614
-22:17:54.991 [main] INFO  Main - true
-22:17:54.993 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
-10 units in your stock.
-22:17:54.993 [main] INFO  Main - 8
-22:17:54.993 [main] INFO  GasProduct - the day of the transaction is
-22:17:54.993 [main] INFO  Main - 2023-11-13
-22:17:54.995 [main] INFO  ConstructionProduct - License is OK
-22:17:54.995 [main] INFO  Main - true
-22:17:54.999 [main] INFO  Employee - The name has the right length.
-22:17:55.000 [main] INFO  Employee - The employee name is OK and not contains any number.
-22:17:55.000 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-22:17:55.000 [main] INFO  Employee - The 8 digit phone number is Ok.
-22:17:55.001 [main] INFO  Employee - The specialty seller is Ok.
-22:17:55.001 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-22:17:55.001 [main] INFO  Employee - The employee carlos has been added to the employee list.
-22:17:55.002 [main] INFO  Employee - The name has the right length.
-22:17:55.002 [main] INFO  Employee - The employee name is OK and not contains any number.
-22:17:55.002 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-22:17:55.002 [main] INFO  Employee - The 8 digit phone number is Ok.
-22:17:55.003 [main] INFO  Employee - The specialty seller is Ok.
-22:17:55.003 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-22:17:55.003 [main] INFO  Employee - The employee Jose Antonio has been added to the employee list.
-22:17:55.017 [main] INFO  Employee - 
-Name: Jose Antonio
-Speciality: seller
-Phone number: 12345678
-22:17:55.017 [main] INFO  Employee - 
-Name: carlos
-Speciality: seller
-Phone number: 12345678
-22:17:55.037 [main] INFO  GardenProduct - The resume name of the product is:
-Small scissors
-The full description is:
-Small size scissors to cut grass
-It is a non poisonous product
-22:17:55.038 [main] INFO  GardenProduct - The resume name of the product is:
-Medium scissors
-The full description is:
-Medium size scissors to cut grass
-It is a non poisonous product
-22:17:55.038 [main] INFO  GardenProduct - The resume name of the product is:
-Big scissors
-The full description is:
-Big size scissors to cut grass
-It is a non poisonous product
-22:25:24.925 [main] INFO  Main - Hello and welcome to hardware store!!
-22:25:24.943 [main] INFO  Main - The resume name of the product is:
-Light bulb
-The full description is:
-led light bulb
-22:25:24.946 [main] INFO  Main - 10.0
-22:25:24.947 [main] INFO  Main - 1.01
-22:25:24.947 [main] INFO  Main - EL1725986614
-22:25:24.947 [main] INFO  Main - true
-22:25:24.949 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
-10 units in your stock.
-22:25:24.952 [main] INFO  Main - 8
-22:25:24.953 [main] INFO  GasProduct - the day of the transaction is
-22:25:24.953 [main] INFO  Main - 2023-11-13
-22:25:24.954 [main] INFO  ConstructionProduct - License is OK
-22:25:24.955 [main] INFO  Main - true
-22:25:24.959 [main] INFO  Employee - The name has the right length.
-22:25:24.959 [main] INFO  Employee - The employee name is OK and not contains any number.
-22:25:24.959 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-22:25:24.959 [main] INFO  Employee - The 8 digit phone number is Ok.
-22:25:24.960 [main] INFO  Employee - The specialty seller is Ok.
-22:25:24.960 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-22:25:24.960 [main] INFO  Employee - The employee carlos has been added to the employee list.
-22:25:24.960 [main] INFO  Employee - The name has the right length.
-22:25:24.961 [main] INFO  Employee - The employee name is OK and not contains any number.
-22:25:24.961 [main] INFO  Employee - The gmail format is OK, only gmail mails.
-22:25:24.961 [main] INFO  Employee - The 8 digit phone number is Ok.
-22:25:24.961 [main] INFO  Employee - The specialty seller is Ok.
-22:25:24.961 [main] INFO  Employee - Thanks for checking the employee status before adding to the list of employees.
-22:25:24.961 [main] INFO  Employee - The employee Jose Antonio has been added to the employee list.
-22:25:24.976 [main] INFO  Employee - 
-Name: Jose Antonio
-Speciality: seller
-Phone number: 12345678
-22:25:24.977 [main] INFO  Employee - 
-Name: carlos
-Speciality: seller
-Phone number: 12345678
-22:25:24.992 [main] INFO  GardenProduct - The resume name of the product is:
-Small scissors
-The full description is:
-Small size scissors to cut grass
-It is a non poisonous product
-22:25:24.993 [main] INFO  GardenProduct - The resume name of the product is:
-Medium scissors
-The full description is:
-Medium size scissors to cut grass
-It is a non poisonous product
-22:25:24.993 [main] INFO  GardenProduct - The resume name of the product is:
-Big scissors
-The full description is:
-Big size scissors to cut grass
-It is a non poisonous product
+16:13:23.044 [main] INFO  CustomLinkedList - 1
+16:13:23.044 [main] INFO  CustomLinkedList - 2
+16:13:23.044 [main] INFO  CustomLinkedList - 5
+16:13:23.044 [main] INFO  CustomLinkedList - 6
+16:13:23.045 [main] INFO  CustomLinkedList - 1
+16:13:23.045 [main] INFO  CustomLinkedList - 2
+16:13:23.045 [main] INFO  CustomLinkedList - 6

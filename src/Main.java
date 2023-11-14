@@ -125,5 +125,15 @@ public class Main {
 
         System.out.println(Employee.resumedEmployeeInformationList);
 
+        //Trying the CustomLinkedList With generics
+        CustomLinkedList<String> myList=new CustomLinkedList<String>();
+        myList.addNode("1");
+        myList.addNode("2");
+        myList.addNode("5");
+        myList.addNode("6");
+        myList.printData();
+        myList.deleteNode("5");
+        myList.printData();
+
     }
 }
