@@ -20,7 +20,7 @@ public class CustomLinkedList<T> {
 
     //Now the methods that interact with the nodes
     //print every element in the list
-    public void printData(){
+    public void printAllData(){
         //I create a new node and i assing the first element
         Node<T> actualNode=head;
         //I create a while that when a the actual node is not null it print the data of the node
@@ -33,7 +33,7 @@ public class CustomLinkedList<T> {
 
     //Method to add an element to the linked list
 
-    public void addNode(T data){
+    public void addEndNode(T data){
         //Create a new Node element with the new data
         Node<T> newNode=new Node<T>(data);
         //Check if the first node is null or not
@@ -59,20 +59,52 @@ public class CustomLinkedList<T> {
         //of the tail the newNode with the new data
         tail.nextNode=newNode;
     }
+    //Add an element in the first node
+    public void addFirstNode(T data){
+        //Create a new Node element with the new data
+        Node<T> newNode=new Node<T>(data);
+        //Check if the first node is null or not if it is we add it in the fist data
+        if (head==null){
+            head=newNode;
+            return;
+        }
+        //Turn the actual node in the first Node
+        Node<T> previousFistNode=head;
+        //Now i made the new node the first node
+        head=newNode;
+        //Add the previous firstNode to the pointer of the newNode
+        head.nextNode=previousFistNode;
+    }
 
-    public void deleteNode(T data){
+    //method to delete the first node
+    public void deleteFirstNode(){
+        Node <T> newFirstNode=new Node<>(null);
+        try {
+            newFirstNode=head.nextNode;
+            head=newFirstNode;
+        }catch (NullPointerException e){
+            LOGGER.error("You cant do that"+e);
+        }
+
+    }
+    //With this method you delete a desired Middle Node
+    public void deleteMiddleNode(T data){
         //The previous node, it saves the information of the previous node
         Node<T> previousNode=new Node<>(null);
         //The node that we have to delete
         Node<T> deletNode=new Node<>(data);
         //The next node that its going to replace the actualnode.next
         Node<T> nextNode=new Node<>(null);
-        //If the data is the same we delete the whole arrayList
-        if (head.data==deletNode.data){
-            head=null;
+        //If the data is the same we delete the whole arrayList for that reason, we cannot delete it
+        if (head==null){
+            LOGGER.info("The list is already empty");
             return;
         }
-        //Here we start to iterate thug the array
+        if (head.data==deletNode.data){
+            LOGGER.info("You cant delete the first node");
+            return;
+        }
+        //Here we start to iterate through the array
         Node<T> actualNode=head;
         try {
             //While the information in the data Node is different to the one thath we want to delete
@@ -96,6 +128,28 @@ public class CustomLinkedList<T> {
             LOGGER.error("Another error happened"+f);
         }
 
+    }
+
+    public void deleteLastNode(){
+        Node<T> previousLastNode=new Node<>(null);
+        Node<T>actualNode=new Node<>(null);
+        actualNode=head;
+        if (actualNode==tail.nextNode){
+            LOGGER.info("you cant delete the array with this method use the deletCustomLinkedList() method");
+            return;
+        }
+        while (actualNode.nextNode!=null){
+            if (actualNode.nextNode.nextNode==null){
+                previousLastNode=actualNode;
+            }
+            actualNode=actualNode.nextNode;
+        }
+        tail.nextNode=previousLastNode;
+        previousLastNode.nextNode=null;
+    }
+    //Delete the whole customlinkedlist
+    public void deleteCustomLinkedList(){
+        head=null;
     }
 
 

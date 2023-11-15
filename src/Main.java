@@ -125,15 +125,67 @@ public class Main {
 
         System.out.println(Employee.resumedEmployeeInformationList);
 
+        //Interacting with the CustomLinkedList
+
         //Trying the CustomLinkedList With generics
         CustomLinkedList<String> myList=new CustomLinkedList<String>();
-        myList.addNode("1");
-        myList.addNode("2");
-        myList.addNode("5");
-        myList.addNode("6");
-        myList.printData();
-        myList.deleteNode("5");
-        myList.printData();
+        myList.addEndNode("1");
+        myList.addEndNode("2");
+        myList.addEndNode("5");
+        myList.addEndNode("6");
+        //Printing all the data
+        myList.printAllData();
+        System.out.println();
+        //Deleting the firstNode
+        myList.deleteFirstNode();
+        System.out.println();
+        myList.printAllData();
+        System.out.println();
+        //Deleting an element in middle of the Customlinked list
+        myList.deleteMiddleNode("5");
+        //Adding a firstNode
+        myList.addFirstNode("7");
+        System.out.println();
+        myList.printAllData();
+        System.out.println();
+        //deleting the lastNode of the last part
+        myList.deleteLastNode();
+        myList.deleteLastNode();
+        myList.deleteFirstNode();
+        System.out.println();
+        myList.printAllData();
+        //Delete the whole list
+        myList.addEndNode("1");
+        myList.addEndNode("2");
+        myList.addEndNode("5");
+        myList.addEndNode("6");
+        System.out.println();
+        myList.printAllData();
+        myList.deleteCustomLinkedList();
+        myList.printAllData();
+
+        // END Interacting with the CustomLinkedList
+
+
+
+        /* Interacting with CustomLinkedList using an object
+        CustomLinkedList<ElectricProduct> electricProductCustomLinkedList= new CustomLinkedList<>();
+        ElectricProduct lightBulb3=new ElectricProduct("Light bulb3","led light bulb");
+        ElectricProduct lightBulb4=new ElectricProduct("Light bulb4","led light bulb");
+        ElectricProduct lightBulb5=new ElectricProduct("Light bulb4","led light bulb");
+        ElectricProduct lightBulb6=new ElectricProduct("Light bulb6","led light bulb");
+        ElectricProduct lightBulb7=new ElectricProduct("Light bulb7","led light bulb");
+        electricProductCustomLinkedList.addFirstNode(lightBulb3);
+        electricProductCustomLinkedList.addEndNode(lightBulb4);
+        electricProductCustomLinkedList.addEndNode(lightBulb5);
+        electricProductCustomLinkedList.addEndNode(lightBulb6);
+        electricProductCustomLinkedList.addEndNode(lightBulb7);
+        electricProductCustomLinkedList.deleteFirstNode();
+        electricProductCustomLinkedList.deleteMiddleNode(lightBulb5);
+        electricProductCustomLinkedList.printAllData();
+
+         */
+
 
     }
 }
