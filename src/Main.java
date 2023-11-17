@@ -85,7 +85,7 @@ public class Main {
         System.out.println();
         System.out.println();
         //Creating a new employee
-        Employee carlosRusso=new Employee("carlos","123@gmail.com","12345678","seller");
+        Employee carlosRusso=new Employee("carlos12","123@mail.com","123456789","sellerrrrr");
         System.out.println();
         //Check personalized exception
         carlosRusso.checkEmployeeData();
@@ -98,7 +98,7 @@ public class Main {
         System.out.println();
         System.out.println();
         //Creating a new employee
-        Employee carlosRusso2=new Employee("Jose Antonio","123@gmail.com","12345678","seller");
+        Employee carlosRusso2=new Employee("josefo","123@gmail.com","12345678","seller");
         //Check personalized exception before adding in the list
         System.out.println();
         carlosRusso2.checkEmployeeData();
