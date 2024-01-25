@@ -1,0 +1,63 @@
+10:56:32.772 [main] INFO  Main - Hello and welcome to hardware store!!
+10:56:32.786 [main] INFO  Main - The resume name of the product is:
+Light bulb
+The full description is:
+led light bulb
+10:56:32.789 [main] INFO  Main - 10.0
+10:56:32.790 [main] INFO  Main - 1.01
+10:56:32.791 [main] INFO  Main - EL1725986614
+10:56:32.791 [main] INFO  Main - true
+10:56:32.793 [main] INFO  GasProduct - you can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+10:56:32.793 [main] INFO  Main - 8
+10:56:32.794 [main] INFO  GasProduct - the day of the transaction is
+10:56:32.804 [main] INFO  Main - 2024-01-25
+10:56:32.806 [main] INFO  ConstructionProduct - License is OK
+10:56:32.807 [main] INFO  Main - true
+10:56:32.814 [main] ERROR Employee - Something went wrong: CustomExeptions.NumberInNamesException: The employee name has a number, please correct it.
+10:56:32.815 [main] ERROR Employee - Something went wrong: CustomExeptions.EmailException: Please only use a @gmail.com email.
+10:56:32.817 [main] ERROR Employee - Something went wrong: CustomExeptions.PhoneNumberException: The phone number has 9 digits and should be 8 digits
+10:56:32.818 [main] ERROR Employee - Something went wrong: CustomExeptions.EmployeeSpecialityException: The specialitysellerrrrr doesn't exist, please enter a valid one: seller or deposit.
+10:56:32.818 [main] INFO  Employee - The employee carlos12 has been added to the employee list.
+10:56:32.819 [main] INFO  Employee - The name length is ok and it has not any number inside
+10:56:32.819 [main] INFO  Employee - The gmail format is OK, only gmail mails.
+10:56:32.819 [main] INFO  Employee - The 8 digit phone number is Ok.
+10:56:32.819 [main] INFO  Employee - The specialty seller is Ok.
+10:56:32.820 [main] INFO  Employee - The employee josefo has been added to the employee list.
+10:56:32.830 [main] INFO  Employee - 
+Name: carlos12
+Speciality: sellerrrrr
+Phone number: 123456789
+10:56:32.832 [main] INFO  Employee - 
+Name: josefo
+Speciality: seller
+Phone number: 12345678
+10:56:32.841 [main] INFO  GardenProduct - The resume name of the product is:
+Small scissors
+The full description is:
+Small size scissors to cut grass
+It is a non poisonous product
+10:56:32.842 [main] INFO  GardenProduct - The resume name of the product is:
+Medium scissors
+The full description is:
+Medium size scissors to cut grass
+It is a non poisonous product
+10:56:32.843 [main] INFO  GardenProduct - The resume name of the product is:
+Big scissors
+The full description is:
+Big size scissors to cut grass
+It is a non poisonous product
+10:56:32.845 [main] INFO  CustomLinkedList - 1
+10:56:32.845 [main] INFO  CustomLinkedList - 2
+10:56:32.845 [main] INFO  CustomLinkedList - 5
+10:56:32.845 [main] INFO  CustomLinkedList - 6
+10:56:32.846 [main] INFO  CustomLinkedList - 2
+10:56:32.846 [main] INFO  CustomLinkedList - 5
+10:56:32.846 [main] INFO  CustomLinkedList - 6
+10:56:32.846 [main] INFO  CustomLinkedList - 7
+10:56:32.846 [main] INFO  CustomLinkedList - 2
+10:56:32.846 [main] INFO  CustomLinkedList - 6
+10:56:32.846 [main] INFO  CustomLinkedList - 1
+10:56:32.846 [main] INFO  CustomLinkedList - 2
+10:56:32.847 [main] INFO  CustomLinkedList - 5
+10:56:32.847 [main] INFO  CustomLinkedList - 6
